@@ -1,0 +1,49 @@
+.container {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.container .leftList {
+  flex: 1;
+}
+.container .leftList .leftList_data {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.container .leftList .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.container .rightList {
+  flex: 3;
+}
+.container .rightList .rightList-title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .rightList .rightList-title .line {
+  color: #ccc;
+}
+.container .rightList .rightList-title .goods_name {
+  color: #000;
+  padding: 0 10rpx;
+  font-size: 30rpx;
+}
+.container .rightList .rightList-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .rightList .rightList-list .goods_commodity {
+  text-align: center;
+  width: 33.33%;
+}
+.container .rightList .rightList-list .goods_commodity image {
+  width: 50%;
+}
+.container .rightList .rightList-list .goods_commodity .rightList-name {
+  font-size: 24rpx;
+}

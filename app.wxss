@@ -1,0 +1,20 @@
+@import "./style/icon.wxss";
+page,
+view,
+text,
+swiper,
+swiper-item,
+image,
+navigator,
+input,
+button {
+    box-sizing: border-box;
+}
+image{
+    width: 100%;
+}
+page{
+    --themeColor:#eb4450;
+    font-size: 28rpx;
+    color: #666;
+}

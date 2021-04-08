@@ -1,0 +1,64 @@
+<view class="cart">
+    <view class="cart-btn" wx:if="{{!(address && address.all)}}">
+        <button plain type="warn" bindtap="handleAddress">添加收货地址</button>
+    </view>
+    <view class="cart-user" wx:else>
+        <view class="user">
+            <text>收货人:{{address.userName}}</text>
+            <view>{{address.all}}</view>
+        </view>
+        <text class="telNumber">{{address.telNumber}}</text>
+    </view>
+</view>
+<view class="detail-cart">
+    <view class="detail-title">购物车</view>
+    <block wx:if="{{hasGoods}}">
+        <view class="detail-list" wx:for="{{cart}}" wx:key="item">
+            <!-- 复选框 -->
+            <view class="detail-checkbox">
+                <checkbox-group bindchange="checkboxChange" data-id="{{item.goods_id}}">
+                    <checkbox color="#eb4450" checked="{{item.checked}}"></checkbox>
+                </checkbox-group>
+            </view>
+            <!-- 图片 -->
+            <view class="detail-image">
+                <image src="{{item.goods_small_logo}}" mode="widthFix" />
+            </view>
+            <!-- 描述 -->
+            <view class="detail-text">
+                <view class="detail-name">{{item.goods_name}}</view>
+                <view class="detail-price">
+                    <text class="goods_price">￥{{item.goods_price}}</text>
+                    <view class="detail-num">
+                        <text class="symbol" bindtap="handleSymbol" data-id="{{item.goods_id}}"
+                            data-operation="{{-1}}">-</text>
+                        <text class="cart-num">{{item.num}}</text>
+                        <text class="symbol" bindtap="handleSymbol" data-id="{{item.goods_id}}"
+                            data-operation="{{1}}">+</text>
+                    </view>
+                </view>
+            </view>
+            <!-- 描述结束 -->
+        </view>
+    </block>
+    <block wx:else>
+        <image
+            src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1564927113&di=87a75d2aae9842b963924c3d4a3dd60b&src=http://www.chinadaily.com.cn/hqzx/images/attachement/jpg/site385/20120924/00221918200911ca40e52b.jpg"
+            mode="widthFix" />
+    </block>
+</view>
+
+<!-- 底部部分 -->
+<view class="btn-foot">
+    <!-- 按钮 -->
+    <view class="checkBtn">
+        <checkbox-group bindchange="allCheckboxChange">
+            <checkbox color="#eb4450" checked="{{allChecked}}">全选</checkbox>
+        </checkbox-group>
+    </view>
+    <view class="foot-goods_price">
+        <view class="goods-pay">合计:<text>{{allPrice}}</text></view>
+        <view>包含运费</view>
+    </view>
+    <view class="foot-pay" bindtap="payTap">结算({{allNum}})</view>
+</view>

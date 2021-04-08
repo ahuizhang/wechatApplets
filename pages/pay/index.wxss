@@ -1,0 +1,125 @@
+page {
+  padding-bottom: 90rpx;
+}
+.cart .cart-btn {
+  padding: 15rpx 0;
+}
+.cart .cart-btn button {
+  width: 50%;
+}
+.cart-user {
+  padding: 20rpx 15rpx;
+  display: flex;
+  color: #000;
+  font-size: 30rpx;
+}
+.cart-user .telNumber {
+  text-align: right;
+  flex: 1;
+}
+.detail-cart .detail-title {
+  text-align: center;
+  font-size: 32rpx;
+  color: var(--themeColor);
+  font-weight: 600;
+  padding: 20rpx 0;
+  border-bottom: 5rpx solid #ccc;
+  border-top: 5rpx solid #ccc;
+}
+.detail-cart .detail-list {
+  display: flex;
+  border-bottom: 1px solid #eb4450;
+  padding: 20rpx 15rpx;
+}
+.detail-cart .detail-list .detail-checkbox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-cart .detail-list .detail-image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-cart .detail-list .detail-image img {
+  width: 80%;
+}
+.detail-cart .detail-list .detail-text {
+  padding: 0 15rpx;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.detail-cart .detail-list .detail-text .detail-name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.detail-cart .detail-list .detail-text .detail-price {
+  display: flex;
+  justify-content: space-between;
+}
+.detail-cart .detail-list .detail-text .detail-price .goods_price {
+  font-weight: 600;
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+.detail-cart .detail-list .detail-text .detail-price .detail-num {
+  display: flex;
+}
+.detail-cart .detail-list .detail-text .detail-price .detail-num .symbol {
+  border: 1rpx solid #ccc;
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-cart .detail-list .detail-text .detail-price .detail-num .cart-num {
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-foot {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 90rpx;
+  border-top: 2px solid #ccc;
+}
+.btn-foot .checkBtn {
+  font-size: 35rpx;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-foot .foot-goods_price {
+  text-align: right;
+  flex: 4;
+  padding-right: 30rpx;
+}
+.btn-foot .foot-goods_price .goods-pay {
+  font-size: 35rpx;
+}
+.btn-foot .foot-goods_price .goods-pay text {
+  color: red;
+}
+.btn-foot .foot-pay {
+  font-size: 35rpx;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: #fff;
+}

@@ -1,0 +1,12 @@
+.tabNav .title {
+  display: flex;
+  text-align: center;
+}
+.tabNav .title .tabNavList {
+  padding: 20rpx 0;
+  flex: 1;
+}
+.tabNav .title .active {
+  color: var(--themeColor);
+  border-bottom: 5rpx solid currentColor;
+}

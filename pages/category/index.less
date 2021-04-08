@@ -1,0 +1,53 @@
+.container {
+    height: ~'calc(100vh - 90rpx)';
+    display: flex;
+
+    .leftList {
+        flex: 1;
+
+        // height: 100%;
+        .leftList_data {
+            height: 80rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30rpx;
+        }
+        .active{
+            color: var(--themeColor);
+            border-left: 5rpx solid currentColor;
+        }
+    }
+
+    .rightList {
+        flex: 3;
+        .rightList-title{
+            height: 80rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .line{
+                color: #ccc;
+            }
+            .goods_name{
+                color: #000;
+                padding: 0 10rpx;
+                font-size: 30rpx;
+            }
+        }
+        .rightList-list{
+            display: flex;
+            flex-wrap: wrap;
+            .goods_commodity{
+                text-align: center;
+                width: 33.33%;
+                image{
+                    width: 50%;
+                }
+                .rightList-name{
+                    font-size: 24rpx;
+                }
+            }
+        }
+    }
+}

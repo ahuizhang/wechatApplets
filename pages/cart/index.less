@@ -1,0 +1,153 @@
+page {
+    padding-bottom: 90rpx;
+}
+
+.cart .cart-btn {
+    padding: 15rpx 0;
+}
+
+.cart .cart-btn button {
+    width: 50%;
+}
+
+.cart-user {
+    padding: 20rpx 15rpx;
+    display: flex;
+    color: #000;
+    font-size: 30rpx;
+
+    .user {}
+
+    .telNumber {
+        text-align: right;
+        flex: 1;
+    }
+}
+
+
+.detail-cart {
+    .detail-title {
+        text-align: center;
+        font-size: 32rpx;
+        color: var(--themeColor);
+        font-weight: 600;
+        padding: 20rpx 0;
+        border-bottom: 5rpx solid #ccc;
+        border-top: 5rpx solid #ccc;
+    }
+
+    .detail-list {
+        display: flex;
+        border-bottom: 1px solid #eb4450;
+        padding: 20rpx 15rpx;
+
+        .detail-checkbox {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .detail-image {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 80%;
+            }
+        }
+
+        .detail-text {
+            padding: 0 15rpx;
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .detail-name {
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+            }
+
+            .detail-price {
+                display: flex;
+                justify-content: space-between;
+
+                .goods_price {
+                    font-weight: 600;
+                    color: var(--themeColor);
+                    font-size: 32rpx;
+                }
+
+                .detail-num {
+                    display: flex;
+
+                    .symbol {
+                        border: 1rpx solid #ccc;
+                        width: 50rpx;
+                        height: 50rpx;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .cart-num {
+                        width: 50rpx;
+                        height: 50rpx;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.btn-foot {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    height: 90rpx;
+    border-top: 2px solid #ccc;
+
+    .checkBtn {
+        font-size: 35rpx;
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot-goods_price {
+        text-align: right;
+        flex: 4;
+        padding-right: 30rpx;
+
+        .goods-pay {
+            font-size: 35rpx;
+
+            text {
+                color: red;
+            }
+        }
+    }
+
+    .foot-pay {
+        font-size: 35rpx;
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        color: #fff;
+    }
+}
